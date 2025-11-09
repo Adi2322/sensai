@@ -1,13 +1,17 @@
-{
+
+  {
   "name": "sensai",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "prisma generate && next build",
-    "start": "next start",
-    
-    "lint": "eslint"
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "postinstall": "prisma generate --schema=./prisma/schema.prisma",
+
+  "lint": "eslint"
+
+
   },
   "dependencies": {
     "@clerk/nextjs": "^6.34.0",
