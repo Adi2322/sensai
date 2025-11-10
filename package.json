@@ -1,16 +1,15 @@
 
-  {
-  "name": "sensai",
+{
+  "name": "ai-career-coach",
   "version": "0.1.0",
   "private": true,
- "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start",
-  "postinstall": "prisma generate --schema=./prisma/schema.prisma",
-
-  "lint": "eslint"
-
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate"
+  
 
   },
   "dependencies": {
